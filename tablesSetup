@@ -1,0 +1,21 @@
+CREATE TABLE users (
+    id INT NOT NULL AUTO_INCREMENT,
+    firstname VARCHAR(50) NOT NULL,
+    lastname VARCHAR(50) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    bio VARCHAR(10000),
+    linkedin VARCHAR(512),
+    facebook VARCHAR(512),
+    instagram VARCHAR(512),
+    pfp VARCHAR(512),
+    hash VARCHAR(200) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+/*
+CREATE DATABASE user;
+
+CREATE DATABASE  cookie_user;
+
+SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH FROM information_schema.columns WHERE TABLE_NAME = 'users';
+*/

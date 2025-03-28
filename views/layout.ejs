@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!------------------------------------------------------------>
+    <!--------------------------BOOTSTRAP------------------------->
+    <!------------------------------------------------------------>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="js/main.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsableSidebar"
+        aria-expanded="true" aria-controls="collapsableSidebar">
+        Toggle Sidebar
+    </button>
+
+    <div class="collapse show sidebar" id="collapsableSidebar">
+        <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-decoration-none">
+            <span class="fs-5 d-none d-sm-inline text-black">Joi - Memories</span>
+        </a>
+
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 mt-2">
+            <hr>
+            <li>
+                <a href="client?page=about" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">
+                        <h6>About</h6>
+                    </span>
+                </a>
+            </li>
+            <li class="mt-3">
+                <a href="client?page=demo" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">
+                        <h6>Demo</h6>
+                    </span>
+                </a>
+            </li>
+            <li class="mt-3">
+                <a href="client?page=resources" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">
+                        <h6>Extra</h6>
+                    </span>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="dropdown pb-4 ps-4 fixed-bottom">
+            <a href="#" class="d-flex align-items-center text-black text-decoration-none dropdown-toggle"
+                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/jc_1224xx1224-1226-0-101.png" alt="hugenerd" width="30" height="30"
+                    class="rounded-circle pl-4">
+                <span class="d-none d-sm-inline mx-2">
+                    Joi Chang
+                </span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                <li><a class="dropdown-item" href="/account">Account</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <form action="/logout?_method=DELETE" method="POST">
+                        <button class="dropdown-item">Log out</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="page-default">
+
+            <%- body %>
+        </div>
+    </div>
+
+</body>
+
+</html>

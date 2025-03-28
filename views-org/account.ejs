@@ -1,0 +1,85 @@
+<div class="head generic-style rounded-3 mt-5 ms-5">
+    <div class="pt-4 ms-4">
+        <h3>Profile</h3>
+        <p>Update your account details below to complete your profile
+        </p>
+    </div>
+</div>
+<div class="account generic-style rounded-3 mt-4 ms-5">
+    <div class="account-picture mt-4 ms-4">
+        <p>Profile Picture</p>
+    </div>
+    <div class="account-info mt-4">
+        <div class="container">
+
+            <form method="post">
+                <div class="row">
+
+                    <div class="col-6">
+                        Firstname: <textarea id="input-length" name="firstname"><%= user.firstname %></textarea>
+                    </div>
+                    <div class="col-6">
+                        Lastname: <textarea id="input-length" name="lastname"><%= user.lastname %></textarea>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center">
+
+                    <div class="col-12 mt-2">
+
+                        Email: <textarea id="input-length" name="email"><%= user.email %></textarea>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12 mt-2">
+
+                        Bio: <textarea type="notesheet" rows="30" cols="50" id="input-length-bio"
+                            name="bio"><%= user.bio %></textarea>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12 mt-2">
+                        <button type="submit">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="account generic-style rounded-3 mt-4 ms-4">
+    <div class="social-info mt-4 ms-3">
+        <div class="container">
+
+            <form method="post">
+                <div class="row">
+
+                    <div class="col-12">
+                        Linkedin: <textarea id="input-length" name="linkedin"><%= user.linkedin %></textarea>
+                    </div>
+
+                </div>
+                <div class="row d-flex align-items-center justify-content-center">
+
+                    <div class="col-12 mt-4">
+
+                        Email: <textarea id="input-length" name="facebook"><%= user.facebook %></textarea>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12 mt-4">
+
+                        Bio: <textarea id="input-length" name="instagram"><%= user.instagram %></textarea>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12 mt-2">
+                        <button type="submit">Update</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

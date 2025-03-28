@@ -1,0 +1,242 @@
+/* General Styling */
+
+.page-default {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+
+    background-color: rgba(246, 245, 245, 1);
+
+}
+
+.page-default .top {
+    width: 83vw;
+    height: 80px;
+
+    background-color: white;
+
+}
+
+.page-default .head {
+    width: 68vw;
+    height: 100px;
+
+}
+
+.page-default .head-campaign {
+    width: 75vw;
+    height: 100px;
+}
+
+.page-default .head h3,
+.page-default .head-campaign h3 {
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+.page-default .head p,
+.page-default .head-campaign p {
+    font-size: 14px;
+    font-weight: 300;
+
+    color: gray;
+
+}
+
+.generic-style {
+
+    background-color: rgb(255, 255, 255);
+
+    border: solid;
+    border-color: rgb(231, 231, 231);
+}
+
+/* Dashboard Page Styling */
+
+/* Dashboard general */
+.page-default .dashboard-droplet-info .dashboard-droplet-text p,
+.page-default .dashboard-funds-info .dashboard-funds-text h5,
+.page-default .dashboard-activity-feed .dashboard-activity-text h5 {
+    font-weight: 600;
+}
+
+/* Dashboard droplets */
+.page-default .dashboard-droplet-info {
+    width: 18vw;
+    height: 140px;
+
+    padding-top: 20px !important;
+
+    float: left;
+}
+
+.page-default .dashboard-droplet-info .dashboard-droplet-text {
+    margin-top: 5px;
+}
+
+
+.page-default .dashboard-droplet-info .dashboard-droplet-text h4 {
+    padding-top: 5px;
+
+    font-weight: 600;
+}
+
+/* Dashboard funds */
+.page-default .dashboard-funds-info {
+    width: 75vw;
+    height: 500px;
+
+
+    padding-top: 20px !important;
+
+    float: left;
+}
+
+
+
+
+/* Dashboard Activity */
+.page-default .dashboard-activity-feed {
+    width: 75vw;
+    height: 180px;
+
+
+    padding-top: 20px !important;
+
+    float: left;
+}
+
+/* Dashboard Funds + Activity */
+.page-default .dashboard-funds-info .dashboard-funds-text .dropdown,
+.page-default .dashboard-activity-feed .dashboard-activity-text .dropdown {
+    margin-top: 0;
+    float: right;
+}
+
+.page-default .dashboard-funds-info .dashboard-funds-text h5,
+.page-default .dashboard-activity-feed .dashboard-activity-text h5,
+.page-default .dashboard-compliance .dashboard-compliance-text h5 {
+    float: left;
+}
+
+.page-default .dashboard-funds-info .dashboard-funds-text,
+.page-default .dashboard-activity-feed .dashboard-activity-text {
+    width: 70vw;
+
+    margin-top: 15px;
+    margin-bottom: 80px;
+
+}
+
+/* Dashboard Compliance */
+.page-default .dashboard-compliance {
+    width: 75vw;
+    height: 90px;
+
+
+    padding-top: 20px !important;
+
+    float: left;
+}
+
+.page-default .dashboard-compliance .dashboard-compliance-text {
+    width: 70vw;
+}
+
+/* Campaign Page Styling */
+
+.page-default .campaign-body {
+    width: 75vw;
+    height: 200px;
+
+    text-align: center;
+}
+
+.page-default .campaign-body .campaign-text {
+    margin-top: 70px;
+}
+
+/* Account Page Styling */
+
+.page-default .account {
+    width: 33vw;
+    height: 350px;
+
+    float: left;
+}
+
+
+
+.page-default .account-picture {
+    width: 5vw;
+    float: left;
+
+}
+
+.page-default .account-info {
+    width: 25vw;
+    float: left;
+
+}
+
+.page-default .social-info {
+    width: 30vw;
+    float: left;
+
+}
+
+.page-default .account-info #input-length,
+.page-default .social-info #input-length {
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+}
+
+.page-default .account-info #input-length-bio {
+    width: 100%;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.page-default .account-info button,
+.page-default .social-info button {
+    width: 100%;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 8px;
+
+}
+
+/* Sidebar */
+a span {
+    color: rgb(103, 103, 103) !important;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.content {
+    margin-left: 230px;
+    padding-left: 20px;
+    width: calc(100% - 230px);
+}
+
+.collapsed-sidebar .content {
+    margin-left: 0;
+    width: 100%;
+}
+
+.dropdown {
+    width: 10vw;
+}

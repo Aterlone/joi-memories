@@ -1,0 +1,28 @@
+{
+  "name": "gravy",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-flash": "^0.0.2",
+    "express-mysql-session": "^3.0.3",
+    "express-session": "^1.18.1",
+    "method-override": "^3.0.0",
+    "mysql2": "^3.13.0",
+    "package.json": "^2.0.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "sanitize": "^2.1.2"
+  }
+}
