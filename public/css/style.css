@@ -1,3 +1,12 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+}
+
 /* General Styling */
 
 .page-default {
@@ -152,11 +161,40 @@
     height: 200px;
 
     text-align: center;
+    perspective: 1000px;
 }
 
-.page-default .campaign-body .campaign-text {
+.container .campaign-text {
     margin-top: 70px;
 }
+
+
+/* 3d image */
+
+/* Container that holds the image */
+.campaign-body .page-default .container {
+    perspective: 1000px;
+    /* Create the 3D effect */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image style for smooth 3D rotation */
+.element {
+    width: 80vw;
+    /* Adjust the size of the image */
+    height: auto;
+    /* Keep the aspect ratio */
+    border-radius: 16px;
+    transition: transform 0.1s ease;
+    /* Optional: Smooth transition */
+    transform-origin: center;
+    transform-style: preserve-3d;
+}
+
 
 /* Account Page Styling */
 

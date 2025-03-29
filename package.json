@@ -10,7 +10,9 @@
   "keywords": [],
   "description": "",
   "dependencies": {
+    "@types/three": "^0.175.0",
     "bcrypt": "^5.1.1",
+    "canvas": "^3.1.0",
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
@@ -18,11 +20,14 @@
     "express-flash": "^0.0.2",
     "express-mysql-session": "^3.0.3",
     "express-session": "^1.18.1",
+    "jsdom": "^26.0.0",
     "method-override": "^3.0.0",
     "mysql2": "^3.13.0",
     "package.json": "^2.0.1",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
-    "sanitize": "^2.1.2"
+    "sanitize": "^2.1.2",
+    "three": "^0.175.0",
+    "three-orbitcontrols": "^2.110.2"
   }
 }
