@@ -186,7 +186,7 @@ canvas {
 .element {
     width: 80vw;
     /* Adjust the size of the image */
-    height: auto;
+    height: 400px;
     /* Keep the aspect ratio */
     border-radius: 16px;
     transition: transform 0.1s ease;
